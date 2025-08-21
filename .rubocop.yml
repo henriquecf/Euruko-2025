@@ -12,7 +12,7 @@ inherit_gem:
   standard: config/base.yml
 
 AllCops:
-  TargetRubyVersion: 3.3.3
+  TargetRubyVersion: 3.3.9
   NewCops: enable
   Exclude:
     - "bin/**"
