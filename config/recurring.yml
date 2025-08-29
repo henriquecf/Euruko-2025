@@ -1,7 +1,3 @@
-periodic_backup_verification:
-  class: LitestreamVerificationJob
-  queue: background
-  schedule: every day at 1am EST
 periodic_session_reminder:
   class: SessionReminderJob
   queue: background
