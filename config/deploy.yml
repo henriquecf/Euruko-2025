@@ -1,5 +1,5 @@
-service: rails-world
-image: ibramsterdam/rails-world
+service: euruko-2025
+image: ghcr.io/henriquecf/euruko-2025
 
 # Use a persistent storage volume for sqlite.
 volumes:
@@ -7,7 +7,8 @@ volumes:
 
 # Credentials for your image host, we recommend Docker Hub.
 registry:
-  username: ibramsterdam
+  server: ghcr.io
+  username: henriquecf
   # Always use an access token rather than real password (pulled from .kamal/secrets).
   password:
     - KAMAL_REGISTRY_PASSWORD
