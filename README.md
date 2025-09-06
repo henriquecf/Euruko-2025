@@ -58,7 +58,7 @@ dotenv -f ".env.staging" kamal secrets print -d staging
 When all variables are present, you can deploy. **Important!**: You must commit your changes before Kamal picks them up.
 
 ```bash
-dotenv -f ".env.staging" kamal deploy -d staging
+dotenv -f ".env.production" kamal deploy -d production
 ```
 </details>
 
