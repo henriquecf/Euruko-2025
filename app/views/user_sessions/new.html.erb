@@ -22,10 +22,6 @@
           </div>
 
           <div class="flex flex-col">
-            <div class="flex flex-row justify-between">
-              <%= form.label :password, class: "text-white italic font-bold mb-2" %>
-              <%= link_to "Forgot password?", new_password_reset_path, class: "font-black italic underline text-white" %>
-            </div>
             <div class="relative" data-controller="password-visibility">
               <%= form.password_field :password, required: true, class: "peer w-full", placeholder: "Password", data: { test_id: "password_field", "password-visibility-target": "input" } %>
               <button class="absolute text-gray-300 right-3 top-1/2 -translate-y-1/2 hover:text-white peer-focus:text-gray-400 peer-focus:hover:text-gray-600" type="button" data-action="password-visibility#toggle">
